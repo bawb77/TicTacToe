@@ -4,5 +4,9 @@
     <string name="app_name">Tictactoe</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="welcome">Welcome to T3</string>
+    <string name="play">Play!</string>
+    <string name="player">Enter Players</string>
+    <string name="rank">Rankings</string>
 
 </resources>

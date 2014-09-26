@@ -16,6 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="102dp"
+        android:maxHeight="130dp"
         android:text="@string/welcome"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#cc0000"

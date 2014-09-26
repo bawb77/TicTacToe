@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;  
 import android.widget.ListView;
 import android.widget.AdapterView;
@@ -17,12 +16,15 @@ import android.widget.AdapterView;
 public class MainActivity extends ActionBarActivity {
 
 	private ListView mainMenu ;  
-	private ArrayAdapter<String> listAdapter ; 
+	private ArrayAdapter<String> listAdapter ;
+	private String[][] StorageList ;
 	  
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        
         mainMenu = (ListView) findViewById( R.id.mainMenu );  
         
         // Create and populate a List of planet names.  
@@ -53,6 +55,7 @@ public class MainActivity extends ActionBarActivity {
             	}
           	}
       });
+        
     }
 
 

@@ -1,16 +1,38 @@
 package tru.lab4.baxter;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ArrayAdapter;  
+import android.widget.ListView;
+import android.widget.AdapterView;
 
 public class EnterPlayer extends ActionBarActivity {
 
+	private ListView playerList;  
+	private ArrayAdapter<String> ltAdapter;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_enter_player);
+		
+		playerList = (ListView) findViewById( R.id.playerList );  
+        
+        // Create and populate a List of planet names.  
+        String[] menuOptions = new String[] {};    
+        ArrayList<String> pList = new ArrayList<String>();  
+        pList.addAll( Arrays.asList(menuOptions) );  
+          
+        // Create ArrayAdapter using the planet list.  
+        ltAdapter = new ArrayAdapter<String>(this, R.layout.simplerow, pList);
+        playerList.setAdapter( ltAdapter );
 	}
 
 	@Override

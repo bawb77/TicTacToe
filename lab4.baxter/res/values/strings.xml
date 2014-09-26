@@ -9,4 +9,10 @@
     <string name="player">Enter Players</string>
     <string name="rank">Rankings</string>
 
+    <string-array name="Main"></string-array>
+
+    <string name="title_activity_play">Play</string>
+    <string name="title_activity_enter_player">EnterPlayer</string>
+    <string name="title_activity_rankings">Rankings</string>
+
 </resources>
